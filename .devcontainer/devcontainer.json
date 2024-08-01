@@ -1,0 +1,21 @@
+{
+  "features": {
+    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
+  },
+  "dockerComposeFile": [
+    "docker-compose.yml"
+  ],
+  "service": "devcontainer",
+  "workspaceFolder": "/workspace",
+  "postCreateCommand": "./.devcontainer/postCreateCommand.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker",
+        "mutantdino.resourcemonitor",
+        "eamodio.gitlens",
+        "redhat.vscode-yaml"
+      ]
+    }
+  }
+}
